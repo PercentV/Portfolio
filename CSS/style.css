@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Century Gothic';
+    font-size: 14px;
+}
+
+.margins { margin: 200px 0; padding: 100px 0; }
+
+.nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: .5px .5px 5px 2px grey;
+    z-index: 1;
+    background-color: rgb(255, 243, 228); }
+
+.header .logo { font-size: 25px; text-transform: uppercase; }
+
+ul {
+    list-style: none; display: flex;
+}
+
+li {
+    margin-left: 30px;
+}
+
+.logo-link, .nav-link {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.main {
+    margin: 30px 30px 0 30px;
+    background: linear-gradient(to right bottom, #ffffffcb, #fcfdbbce), url("../IMAGES/pexels-andrea-piacquadio-814822.jpg") no-repeat center left/cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+}
+
+.main-header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-h {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 30px;
+}
+
+.main-t {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.btn {
+    color: black;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 2px solid grey;
+}
+
+#about {
+    background-color:rgb(228, 255, 237);
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+#about h1 {
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+#about p {
+    word-spacing: 5px;
+    font-size: 30px;
+    max-width: 800px;
+    margin: auto;
+    opacity: .4;
+}
+
+#skills h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+.skill {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.box {
+    position: relative;
+    padding: 30px;
+    height: 200px;
+    border-radius: 30px;
+}
+.box img {
+    width: 100%;
+    height: 90px;
+    display: block;
+}
+
+#projects {
+    text-align: center;
+    background: linear-gradient(to left bottom, #d2ffe6bd, #dbddffce), url("../IMAGES/pexels-christina-morillo-1181271.jpg") no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+}
+
+#projects h1 {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 50px;
+    color:rgb(45, 75, 172);
+}
+
+#contact {
+    text-align: center;
+    background-color: bisque;
+    padding: 100px 0;
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+.icon span {
+    font-size: 20px;
+}
+
+.footer {
+    padding: 20px;
+    opacity: .5;
+    text-align: right;
+}
